@@ -1,0 +1,940 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#20282F"
+    android:orientation="vertical"
+    tools:context=".eme_contacts">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_margin="16dp"
+        app:cardBackgroundColor="@color/background"
+        app:cardCornerRadius="5dp"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="Emergency Contacts"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/golden" />
+
+                <androidx.cardview.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#20282F"
+                    android:clickable="true"
+                    app:cardBackgroundColor="#20282F"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_margin="10dp"
+                        android:background="#20282F"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="116dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="90dp"
+                            android:orientation="vertical">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginLeft="15dp"
+                                android:layout_weight="1"
+                                android:text="Police"
+                                android:textColor="#FFB900"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginLeft="15dp"
+                                android:layout_weight="1"
+                                android:text="100"
+                                android:textColor="#FFB900"
+                                android:textSize="20sp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+
+                                android:id="@+id/call1"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="20dp"
+                                android:clickable="true"
+                                android:src="@drawable/telep" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:text="Call"
+                                android:textColor="#FFB900"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#20282F"
+                    android:clickable="true"
+                    app:cardBackgroundColor="#20282F"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_margin="10dp"
+                        android:background="#20282F"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="117dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="90dp"
+                            android:orientation="vertical">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginLeft="15dp"
+                                android:layout_weight="1"
+                                android:text="Fire"
+                                android:textColor="#FFB900"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginLeft="15dp"
+                                android:layout_weight="1"
+                                android:text="101"
+                                android:textColor="#FFB900"
+                                android:textSize="20sp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+
+                                android:id="@+id/call2"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="20dp"
+                                android:clickable="true"
+                                android:src="@drawable/telep" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:text="Call"
+                                android:textColor="#FFB900"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#20282F"
+                    android:clickable="true"
+                    app:cardBackgroundColor="#20282F"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_margin="10dp"
+                        android:background="#20282F"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="90dp"
+                            android:orientation="vertical">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginLeft="15dp"
+                                android:layout_weight="1"
+                                android:text="Ambulance"
+                                android:textColor="#FFB900"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginLeft="15dp"
+                                android:layout_weight="1"
+                                android:text="108"
+                                android:textColor="#FFB900"
+                                android:textSize="20sp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+
+                                android:id="@+id/call3"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="20dp"
+                                android:clickable="true"
+                                android:src="@drawable/telep" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:text="Call"
+                                android:textColor="#FFB900"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#20282F"
+                    android:clickable="true"
+                    app:cardBackgroundColor="#20282F"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_margin="10dp"
+                        android:background="#20282F"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="117dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="90dp"
+                            android:orientation="vertical">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginLeft="15dp"
+                                android:layout_weight="1"
+                                android:text="Child Helpline"
+                                android:textColor="#FFB900"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginLeft="15dp"
+                                android:layout_weight="1"
+                                android:text="1098"
+                                android:textColor="#FFB900"
+                                android:textSize="20sp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+
+                                android:id="@+id/call4"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="20dp"
+                                android:clickable="true"
+                                android:src="@drawable/telep" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:text="Call"
+                                android:textColor="#FFB900"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#20282F"
+                    android:clickable="true"
+                    app:cardBackgroundColor="#20282F"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_margin="10dp"
+                        android:background="#20282F"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="118dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="90dp"
+                            android:orientation="vertical">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginLeft="15dp"
+                                android:layout_weight="1"
+                                android:text="Women Helpline"
+                                android:textColor="#FFB900"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginLeft="15dp"
+                                android:layout_weight="1"
+                                android:text="1091"
+                                android:textColor="#FFB900"
+                                android:textSize="20sp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+
+                                android:id="@+id/call5"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="20dp"
+                                android:clickable="true"
+                                android:src="@drawable/telep" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:text="Call"
+                                android:textColor="#FFB900"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#20282F"
+                    android:clickable="true"
+                    app:cardBackgroundColor="#20282F"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_margin="10dp"
+                        android:background="#20282F"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="90dp"
+                            android:orientation="vertical">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginLeft="15dp"
+                                android:layout_weight="1"
+                                android:text="Senior Citizen Helpline"
+                                android:textColor="#FFB900"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginLeft="15dp"
+                                android:layout_weight="1"
+                                android:text="1090"
+                                android:textColor="#FFB900"
+                                android:textSize="20sp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+
+                                android:id="@+id/call6"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="20dp"
+                                android:clickable="true"
+                                android:src="@drawable/telep" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:text="Call"
+                                android:textColor="#FFB900"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#20282F"
+                    android:clickable="true"
+                    app:cardBackgroundColor="#20282F"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_margin="10dp"
+                        android:background="#20282F"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="122dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="90dp"
+                            android:orientation="vertical">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginLeft="15dp"
+                                android:layout_weight="1"
+                                android:text="Election Commission Helpline"
+                                android:textColor="#FFB900"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginLeft="15dp"
+                                android:layout_weight="1"
+                                android:text="1950"
+                                android:textColor="#FFB900"
+                                android:textSize="20sp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+
+                                android:id="@+id/call7"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="20dp"
+                                android:clickable="true"
+                                android:src="@drawable/telep" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:text="Call"
+                                android:textColor="#FFB900"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#20282F"
+                    android:clickable="true"
+                    app:cardBackgroundColor="#20282F"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_margin="10dp"
+                        android:background="#20282F"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="123dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="90dp"
+                            android:orientation="vertical">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginLeft="15dp"
+                                android:layout_weight="1"
+                                android:text="National Highways Helpline"
+                                android:textColor="#FFB900"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginLeft="15dp"
+                                android:layout_weight="1"
+                                android:text="1033"
+                                android:textColor="#FFB900"
+                                android:textSize="20sp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+
+                                android:id="@+id/call8"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="20dp"
+                                android:clickable="true"
+                                android:src="@drawable/telep" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:text="Call"
+                                android:textColor="#FFB900"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#20282F"
+                    android:clickable="true"
+                    app:cardBackgroundColor="#20282F"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_margin="10dp"
+                        android:background="#20282F"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="122dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="90dp"
+                            android:orientation="vertical">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginLeft="15dp"
+                                android:layout_weight="1"
+                                android:text="Railway Security Helpline"
+                                android:textColor="#FFB900"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginLeft="15dp"
+                                android:layout_weight="1"
+                                android:text="1322"
+                                android:textColor="#FFB900"
+                                android:textSize="20sp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+
+                                android:id="@+id/call9"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="20dp"
+                                android:clickable="true"
+                                android:src="@drawable/telep" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:text="Call"
+                                android:textColor="#FFB900"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="#20282F"
+                    android:clickable="true"
+                    app:cardBackgroundColor="#20282F"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_margin="10dp"
+                        android:background="#20282F"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="125dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="90dp"
+                            android:orientation="vertical">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginLeft="15dp"
+                                android:layout_weight="1"
+                                android:text="Anti-Corruption Bureau"
+                                android:textColor="#FFB900"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginLeft="15dp"
+                                android:layout_weight="1"
+                                android:text="08022342100"
+                                android:textColor="#FFB900"
+                                android:textSize="15sp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+
+                                android:id="@+id/call10"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="20dp"
+                                android:src="@drawable/telep"
+                                android:clickable="true" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:text="Call"
+                                android:textColor="#FFB900"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Report 2 KSP</string>
+    <string name="task">Task</string>
+    <string name="update_profile">UPDATE PROFILE</string>
+    <string name="name">Name</string>
+    <string name="emailid">EmailId</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="logout">LogOut</string>
+    <string name="change_password">Change Password</string>
+</resources>

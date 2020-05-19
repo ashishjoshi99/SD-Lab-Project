@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:padding="16dp"
+    app:layout_constraintCircleRadius="20dp"
+    tools:ignore="ExtraText"
+    tools:visibility="visible">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="@color/background"
+        app:cardCornerRadius="10dp"
+        tools:ignore="MissingConstraints">
+
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:background="@color/background"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/stolen_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="#FFB900"
+            app:autoSizeMaxTextSize="60dp"
+            app:autoSizeMinTextSize="1dp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/stolen_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="#FFB900"
+            app:autoSizeMaxTextSize="60dp"
+            app:autoSizeMinTextSize="1dp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/stolen_1" />
+
+        <TextView
+            android:id="@+id/stolen_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="#FFB900"
+            app:autoSizeMaxTextSize="60dp"
+            app:autoSizeMinTextSize="1dp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/stolen_2" />
+
+        <TextView
+            android:id="@+id/stolen_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="#FFB900"
+            app:autoSizeMaxTextSize="60dp"
+            app:autoSizeMinTextSize="1dp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/stolen_3" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/stolen_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="50dp"
+        android:maxWidth="150dp"
+        android:maxHeight="150dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintCircleRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_foreground"
+        tools:visibility="visible" />
+
+
+    />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FFB900"
+        android:textColor="#FFFFFF"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+

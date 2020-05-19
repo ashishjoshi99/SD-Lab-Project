@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#20282F"
+    android:orientation="vertical"
+    tools:context=".cardavtivity0">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_margin="16dp"
+        app:cardBackgroundColor="@color/background"
+        app:cardCornerRadius="5dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="Report Incident"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#FFB900" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Reporting to *"
+                    android:textColor="#FFFFFF" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:orientation="vertical">
+
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spinner2"
+                        android:layout_width="match_parent"
+                        android:layout_height="51dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#20282F"
+                        android:popupBackground="#20282F" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Select incident *"
+                    android:textColor="#FFFFFF" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:orientation="vertical">
+
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spinner4"
+                        android:layout_width="match_parent"
+                        android:layout_height="51dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#20282F"
+                        android:popupBackground="#20282F" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Address/Location of incident *"
+                    android:textColor="#FFFFFF" />
+
+                <EditText
+                    android:id="@+id/ri_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/input_field"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine"
+                    android:textColor="#FFB900" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Details of incident *"
+                    android:textColor="#FFFFFF" />
+
+                <EditText
+                    android:id="@+id/ri_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/input_field"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine"
+                    android:textColor="#FFB900" />
+
+                <TextView
+                    android:id="@+id/textView666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    android:text="* All fields are Mandatory"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Please Upload Image for Ease of Investigation"
+                    android:textColor="#FFFFFF"
+                    android:textSize="10dp" />
+
+                <ImageView
+                    android:id="@+id/upload"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:clickable="true"
+                    android:src="@drawable/camera" />
+
+                <ProgressBar
+                    android:id="@+id/ca0"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/report"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="50dp"
+                    android:background="#4AFF70"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

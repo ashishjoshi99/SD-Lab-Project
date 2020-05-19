@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "41627971375",
+    "firebase_url": "https://crim-b3974.firebaseio.com",
+    "project_id": "crim-b3974",
+    "storage_bucket": "crim-b3974.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:41627971375:android:f5f5055e0fcf336502bbda",
+        "android_client_info": {
+          "package_name": "com.example.crim"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "41627971375-dpchp2brmfn6fmm52uok0v6cpb6t3u88.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAODMV2CWa-l1Jsvm1PH9N5VstrlfFNDwM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "41627971375-dpchp2brmfn6fmm52uok0v6cpb6t3u88.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

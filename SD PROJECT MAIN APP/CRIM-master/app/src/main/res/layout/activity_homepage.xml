@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".homepage">
+
+    <!--Kinda cool but hectic comment style in xml, for image auto slide view-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/profile"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+
+
+                android:clickable="true"
+                app:srcCompat="@drawable/profile" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/settings"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="10dp"
+
+
+                android:clickable="true"
+                app:srcCompat="@drawable/settings" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.denzcoskun.imageslider.ImageSlider
+        android:id="@+id/imgslider"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="10dp"
+        app:auto_cycle="true"
+        app:delay="0"
+        app:period="1500" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:text="Karnataka State Police"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:background="#FFB900"
+        android:layout_marginBottom="10dp"
+        android:textColor="#FFFFFF"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <GridLayout
+                android:id="@+id/home_grid"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:layout_weight="8"
+                android:alignmentMode="alignMargins"
+                android:layout_marginBottom="20dp"
+                android:columnCount="2"
+                android:padding="16dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="16dp"
+                    app:cardBackgroundColor="#20282F"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="20dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:src="@drawable/report" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Report Incident"
+                            android:textAlignment="center"
+                            android:textColor="#FFB900"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="16dp"
+                    app:cardBackgroundColor="#20282F"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:src="@drawable/missing" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Missing Person"
+                            android:textAlignment="center"
+                            android:textColor="#FFB900"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="16dp"
+                    app:cardBackgroundColor="#20282F"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:src="@drawable/sim1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Missing Phone"
+                            android:textAlignment="center"
+                            android:textColor="#FFB900"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="16dp"
+                    app:cardBackgroundColor="#20282F"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:src="@drawable/car" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Stolen Vehicle"
+                            android:textAlignment="center"
+                            android:textColor="#FFB900"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="16dp"
+                    app:cardBackgroundColor="#20282F"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:src="@drawable/station" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Police Station"
+                            android:textAlignment="center"
+                            android:textColor="#FFB900"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="16dp"
+                    app:cardBackgroundColor="#20282F"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:src="@drawable/contacts" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Emergency Contact"
+                            android:textAlignment="center"
+                            android:textColor="#FFB900"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="16dp"
+                    app:cardBackgroundColor="#20282F"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:src="@drawable/missing" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="List of Missing Person"
+                            android:textAlignment="center"
+                            android:textColor="#FFB900"
+                            android:textSize="10sp"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+            </GridLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="bottom|right">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="#ff0000"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="end"
+            android:alpha="0.8"
+            android:text="SOS"
+
+
+
+            app:tint="@android:color/white" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="SOS"
+            android:layout_marginRight="8.5dp"
+            android:layout_marginTop="2dp"
+            android:elevation="16dp"
+            android:textColor="@android:color/white"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </FrameLayout>
+
+
+
+
+
+
+</LinearLayout>
